@@ -1,0 +1,55 @@
+{
+  "seed": 2027,
+  "mode": "random_slots",
+  "obstacle_count": 2,
+  "selected_slots": [
+    "R1",
+    "R13"
+  ],
+  "obstacle_positions_m": [
+    [
+      2.125,
+      1.625
+    ],
+    [
+      1.2,
+      1.2
+    ]
+  ],
+  "obstacles": [
+    {
+      "entity_name": "obstacle_1",
+      "slot_id": "R1",
+      "position_m": [
+        2.125,
+        1.625,
+        0
+      ],
+      "diameter_m": 0.05,
+      "height_m": 0.1
+    },
+    {
+      "entity_name": "obstacle_2",
+      "slot_id": "R13",
+      "position_m": [
+        1.2,
+        1.2,
+        0
+      ],
+      "diameter_m": 0.05,
+      "height_m": 0.1
+    }
+  ],
+  "attempts": 1,
+  "task_code": "456+312+654+321",
+  "algorithm_version": "gongchuang_slots_v2",
+  "status": "reference_image_uncalibrated_test_draw",
+  "classification": "development_test_not_official_quantity",
+  "reachability_status": "PATH",
+  "navigation_task": {
+    "start": "raw_material",
+    "goal": "coarse_slot_2",
+    "scope": "configured_gray_navigation_between_named_approaches"
+  },
+  "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey"
+}

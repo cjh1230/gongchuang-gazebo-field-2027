@@ -1,0 +1,63 @@
+{
+  "empty_obstacles": {
+    "sdf_check": "pass",
+    "iterations": 2101,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "single_obstacle": {
+    "sdf_check": "pass",
+    "iterations": 2110,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "competition": {
+    "sdf_check": "pass",
+    "iterations": 2105,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "blocked_corridor": {
+    "sdf_check": "pass",
+    "iterations": 2105,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "contact_test": {
+    "sdf_check": "pass",
+    "iterations": 1886,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry",
+    "settled_cylinder_center_z": 0.04999914163795964
+  },
+  "random_seeded": {
+    "sdf_check": "pass",
+    "iterations": 2105,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "random_batch2_ready": {
+    "sdf_check": "pass",
+    "iterations": 2199,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "random_stacking_demo": {
+    "sdf_check": "pass",
+    "iterations": 2107,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "central_blocked": {
+    "sdf_check": "pass",
+    "iterations": 2107,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  },
+  "stress_6": {
+    "sdf_check": "pass",
+    "iterations": 2204,
+    "physics": "running",
+    "live_entity_poses": "match_unified_geometry"
+  }
+}

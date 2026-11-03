@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="raw_material_station">
+    <static>false</static>
+    <link name="body">
+      <visual name="pedestal">
+        <pose>0 0 0.034999999999999996 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.075</radius>
+            <length>0.06999999999999999</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.74 0.75 0.77 1</ambient>
+          <diffuse>0.74 0.75 0.77 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <collision name="pedestal_collision">
+        <pose>0 0 0.034999999999999996 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.075</radius>
+            <length>0.06999999999999999</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.0018145833333333332</ixx>
+          <iyy>0.0018145833333333332</iyy>
+          <izz>0.0028125</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <link name="turntable">
+      <pose>0 0 0.08 0 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.002829166666666667</ixx>
+          <iyy>0.002829166666666667</iyy>
+          <izz>0.005625</izz>
+        </inertia>
+      </inertial>
+      <visual name="turntable">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.15</radius>
+            <length>0.02</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.94 0.94 0.94 1</ambient>
+          <diffuse>0.94 0.94 0.94 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <collision name="turntable_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.15</radius>
+            <length>0.02</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="registration_0">
+        <pose>6.123233995736766e-18 -0.1 0.0102 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.009</radius>
+            <length>0.0001</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <visual name="registration_1">
+        <pose>0.08660254037844388 0.04999999999999999 0.0102 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.009</radius>
+            <length>0.0001</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <visual name="registration_2">
+        <pose>-0.08660254037844385 0.05000000000000004 0.0102 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.009</radius>
+            <length>0.0001</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+    </link>
+    <joint name="fixture_to_world" type="fixed">
+      <parent>world</parent>
+      <child>body</child>
+    </joint>
+    <joint name="turntable_joint" type="revolute">
+      <parent>body</parent>
+      <child>turntable</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+          <effort>10</effort>
+          <velocity>2</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <plugin filename="libgongchuang_turntable.so" name="gongchuang::TurntableSystem">
+      <seconds_per_revolution>8.0</seconds_per_revolution>
+      <direction>0</direction>
+      <seed>2027</seed>
+      <stops_per_revolution>3</stops_per_revolution>
+      <dwell_seconds>2.0</dwell_seconds>
+      <initial_dwell_seconds>2.0</initial_dwell_seconds>
+    </plugin>
+  </model>
+</sdf>

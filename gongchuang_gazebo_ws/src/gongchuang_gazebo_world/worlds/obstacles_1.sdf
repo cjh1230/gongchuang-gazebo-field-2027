@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <world name="gongchuang">
+    <physics name="physics" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+    <gravity>0 0 -9.81</gravity>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <scene>
+      <ambient>0.55 0.55 0.55 1</ambient>
+      <background>0.19 0.21 0.24 1</background>
+      <shadows>true</shadows>
+      <grid>false</grid>
+    </scene>
+    <light name="sun" type="directional">
+      <pose>0 0 5 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>-0.3 0.2 -1</direction>
+      <cast_shadows>true</cast_shadows>
+      <attenuation>
+        <range>100</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+    </light>
+    <include>
+      <uri>model://competition_field</uri>
+      <name>field</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://raw_material_station</uri>
+      <name>raw_material</name>
+      <pose>1.2 2.47 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://processing_station</uri>
+      <name>coarse</name>
+      <pose>1.2 0.075 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://processing_station</uri>
+      <name>temporary</name>
+      <pose>0.075 1.2 0 0 0 1.5707963267948966</pose>
+    </include>
+    <include>
+      <uri>model://qr_board</uri>
+      <name>task_board</name>
+      <pose>2.3985 1.2 0.2 0 0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://material_4</uri>
+      <name>batch1_item1_color4</name>
+      <pose>1.2 2.37 0.12029999999999999 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://material_5</uri>
+      <name>batch1_item2_color5</name>
+      <pose>1.2866025403784438 2.52 0.12029999999999999 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://material_6</uri>
+      <name>batch1_item3_color6</name>
+      <pose>1.1133974596215561 2.52 0.12029999999999999 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cylinder_obstacle</uri>
+      <name>obstacle_1</name>
+      <pose>2.125 1.625 0 0 0 0</pose>
+    </include>
+    <gui fullscreen="false">
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.55 0.55 0.55</ambient_light>
+        <background_color>0.19 0.21 0.24</background_color>
+        <camera_pose>2.9 -1.1 2.8 0 0.775 2.207</camera_pose>
+        <horizontal_fov>55</horizontal_fov>
+        <anti_aliasing>4</anti_aliasing>
+        <camera_clip>
+          <near>0.01</near>
+          <far>100</far>
+        </camera_clip>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <title>Scene Manager</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <gz-gui>
+          <title>Camera Tracking</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="View control">
+        <gz-gui>
+          <title>View control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="left" target="left" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <use_event>true</use_event>
+      </plugin>
+      <plugin filename="WorldStats" name="World statistics">
+        <gz-gui>
+          <title>World statistics</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="right" target="right" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+      <plugin filename="EntityTree" name="Entity tree">
+        <gz-gui>
+          <title>Entity tree</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="Screenshot" name="Screenshot">
+        <gz-gui>
+          <title>Screenshot</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">50</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="left" target="left" />
+            <line own="top" target="top" />
+          </anchors>
+        </gz-gui>
+      </plugin>
+    </gui>
+  </world>
+</sdf>

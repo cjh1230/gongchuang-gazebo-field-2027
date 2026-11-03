@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="processing_station">
+    <static>true</static>
+    <link name="body">
+      <visual name="station_pad">
+        <pose>0 0 0.005 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.58 0.15 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.94 0.94 0.94 1</ambient>
+          <diffuse>0.94 0.94 0.94 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <collision name="station_pad_collision">
+        <pose>0 0 0.005 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.58 0.15 0.01</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="slot_1_ring_1">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_1">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_1">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_ring_2">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_2">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_2">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_ring_3">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_3">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_3">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_ring_4">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_4">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_4">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_ring_5">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_5">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_5">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_ring_6">
+        <pose>0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_2_ring_6">
+        <pose>0.0 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_3_ring_6">
+        <pose>-0.15 0 0.010150000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://processing_station/meshes/ring_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="slot_1_number">
+        <pose>0.15 0 0.0102 0 0 3.141592653589793</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.015 0.015</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://processing_station/materials/textures/number_1.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="slot_2_number">
+        <pose>0.0 0 0.0102 0 0 3.141592653589793</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.015 0.015</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://processing_station/materials/textures/number_2.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="slot_3_number">
+        <pose>-0.15 0 0.0102 0 0 3.141592653589793</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.015 0.015</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://processing_station/materials/textures/number_3.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

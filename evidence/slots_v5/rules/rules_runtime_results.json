@@ -1,0 +1,49 @@
+{
+  "forward": {
+    "server": "pass",
+    "samples": 238,
+    "seconds_per_active_revolution": 8.000000000004567,
+    "direction": 1,
+    "distinct_dwell_angles": [
+      0,
+      2.0944,
+      4.1888
+    ],
+    "max_dwell_velocity": 4.4713626094e-16,
+    "free_materials_carried_by_friction": "pass"
+  },
+  "reverse": {
+    "server": "pass",
+    "samples": 238,
+    "seconds_per_active_revolution": 8.000000000004567,
+    "direction": -1,
+    "distinct_dwell_angles": [
+      -4.1888,
+      -2.0944,
+      0
+    ],
+    "max_dwell_velocity": 4.47053763379e-16,
+    "free_materials_carried_by_friction": "pass"
+  },
+  "stacking_demo": {
+    "server": "pass",
+    "samples": 119,
+    "three_same_color_two_level_physical_stacks": "pass",
+    "material_count": 6
+  },
+  "batch2_ready": {
+    "server": "pass",
+    "samples": 119,
+    "material_count": 6
+  },
+  "batch2_coarse": {
+    "server": "pass",
+    "samples": 119,
+    "material_count": 6
+  },
+  "batch1_coarse": {
+    "server": "pass",
+    "samples": 80,
+    "material_count": 3
+  }
+}

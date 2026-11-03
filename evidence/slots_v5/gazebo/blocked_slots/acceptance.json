@@ -1,0 +1,69 @@
+{
+  "source": "actual Gazebo Harmonic camera and transport poses",
+  "world": "audit_central_blocked",
+  "selected_slots": [
+    "R4",
+    "R10",
+    "R1"
+  ],
+  "count": 3,
+  "seed": 2027,
+  "obstacle_positions_m": [
+    [
+      0.275,
+      1.625
+    ],
+    [
+      1.2,
+      1.625
+    ],
+    [
+      2.125,
+      1.625
+    ]
+  ],
+  "pose_tolerance_m": 1e-08,
+  "pose_match": true,
+  "navigation": {
+    "status": "NO_PATH",
+    "obstacle_count": 3,
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "robot_footprint_m": [
+      0.3,
+      0.3
+    ],
+    "edge_padding_m": 0.005,
+    "safety_margin_m": 0.01,
+    "tracking_error_m": 0.01,
+    "heading_error_deg": 3.0,
+    "robust_sweep_half_m": 0.17764482364962766,
+    "task_result": {
+      "status": "NO_PATH",
+      "reason": "DISCONNECTED",
+      "expanded": 2838
+    },
+    "raw_to_coarse": {
+      "start": [
+        1.2,
+        2.1
+      ],
+      "goal": [
+        1.2,
+        0.38
+      ],
+      "status": "NO_PATH",
+      "reason": "DISCONNECTED",
+      "expanded": 2838
+    },
+    "blue_zone_policy": "transit_forbidden; selected_departure_nominal_docking_checked_separately",
+    "nominal_blue_departures": {
+      "start_1": true,
+      "start_2": true
+    },
+    "certificate": null
+  }
+}

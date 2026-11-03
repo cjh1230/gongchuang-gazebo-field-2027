@@ -1,0 +1,4 @@
+# Generated manifests verify exact bytes; preserve line endings on every platform.
+* -text
+*.pgm binary
+*.png binary

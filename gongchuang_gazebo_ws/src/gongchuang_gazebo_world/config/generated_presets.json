@@ -1,0 +1,575 @@
+{
+  "obstacles_0": {
+    "seed": 2027,
+    "mode": "random_slots",
+    "obstacle_count": 0,
+    "selected_slots": [],
+    "obstacle_positions_m": [],
+    "obstacles": [],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "test",
+    "reachability_status": "PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "obstacles_0"
+  },
+  "obstacles_1": {
+    "seed": 2027,
+    "mode": "random_slots",
+    "obstacle_count": 1,
+    "selected_slots": [
+      "R1"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "test",
+    "reachability_status": "PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "obstacles_1"
+  },
+  "obstacles_2": {
+    "seed": 2027,
+    "mode": "random_slots",
+    "obstacle_count": 2,
+    "selected_slots": [
+      "R1",
+      "R13"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ],
+      [
+        1.2,
+        1.2
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R13",
+        "position_m": [
+          1.2,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "default_user_configuration_not_official_quantity",
+    "reachability_status": "PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "obstacles_2"
+  },
+  "obstacles_3": {
+    "seed": 2027,
+    "mode": "random_slots",
+    "obstacle_count": 3,
+    "selected_slots": [
+      "R1",
+      "R13",
+      "R12"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ],
+      [
+        1.2,
+        1.2
+      ],
+      [
+        1.2,
+        0.775
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R13",
+        "position_m": [
+          1.2,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_3",
+        "slot_id": "R12",
+        "position_m": [
+          1.2,
+          0.775,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "test",
+    "reachability_status": "PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "obstacles_3"
+  },
+  "stress_4": {
+    "seed": 2027,
+    "mode": "stress_slots",
+    "obstacle_count": 4,
+    "selected_slots": [
+      "R1",
+      "R13",
+      "R12",
+      "R2"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ],
+      [
+        1.2,
+        1.2
+      ],
+      [
+        1.2,
+        0.775
+      ],
+      [
+        1.625,
+        2.125
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R13",
+        "position_m": [
+          1.2,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_3",
+        "slot_id": "R12",
+        "position_m": [
+          1.2,
+          0.775,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_4",
+        "slot_id": "R2",
+        "position_m": [
+          1.625,
+          2.125,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "stress_test_not_official_quantity",
+    "reachability_status": "PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "stress_4"
+  },
+  "stress_5": {
+    "seed": 2027,
+    "mode": "stress_slots",
+    "obstacle_count": 5,
+    "selected_slots": [
+      "R1",
+      "R13",
+      "R12",
+      "R2",
+      "R6"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ],
+      [
+        1.2,
+        1.2
+      ],
+      [
+        1.2,
+        0.775
+      ],
+      [
+        1.625,
+        2.125
+      ],
+      [
+        0.775,
+        0.275
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R13",
+        "position_m": [
+          1.2,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_3",
+        "slot_id": "R12",
+        "position_m": [
+          1.2,
+          0.775,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_4",
+        "slot_id": "R2",
+        "position_m": [
+          1.625,
+          2.125,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_5",
+        "slot_id": "R6",
+        "position_m": [
+          0.775,
+          0.275,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "stress_test_not_official_quantity",
+    "reachability_status": "NO_PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "stress_5"
+  },
+  "stress_6": {
+    "seed": 2027,
+    "mode": "stress_slots",
+    "obstacle_count": 6,
+    "selected_slots": [
+      "R1",
+      "R13",
+      "R12",
+      "R2",
+      "R6",
+      "R9"
+    ],
+    "obstacle_positions_m": [
+      [
+        2.125,
+        1.625
+      ],
+      [
+        1.2,
+        1.2
+      ],
+      [
+        1.2,
+        0.775
+      ],
+      [
+        1.625,
+        2.125
+      ],
+      [
+        0.775,
+        0.275
+      ],
+      [
+        1.625,
+        1.2
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R13",
+        "position_m": [
+          1.2,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_3",
+        "slot_id": "R12",
+        "position_m": [
+          1.2,
+          0.775,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_4",
+        "slot_id": "R2",
+        "position_m": [
+          1.625,
+          2.125,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_5",
+        "slot_id": "R6",
+        "position_m": [
+          0.775,
+          0.275,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_6",
+        "slot_id": "R9",
+        "position_m": [
+          1.625,
+          1.2,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "stress_test_not_official_quantity",
+    "reachability_status": "NO_PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "stress_6"
+  },
+  "central_blocked": {
+    "seed": 2027,
+    "mode": "blocked_slots",
+    "obstacle_count": 3,
+    "selected_slots": [
+      "R4",
+      "R10",
+      "R1"
+    ],
+    "obstacle_positions_m": [
+      [
+        0.275,
+        1.625
+      ],
+      [
+        1.2,
+        1.625
+      ],
+      [
+        2.125,
+        1.625
+      ]
+    ],
+    "obstacles": [
+      {
+        "entity_name": "obstacle_1",
+        "slot_id": "R4",
+        "position_m": [
+          0.275,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_2",
+        "slot_id": "R10",
+        "position_m": [
+          1.2,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      },
+      {
+        "entity_name": "obstacle_3",
+        "slot_id": "R1",
+        "position_m": [
+          2.125,
+          1.625,
+          0
+        ],
+        "diameter_m": 0.05,
+        "height_m": 0.1
+      }
+    ],
+    "attempts": 1,
+    "task_code": "456+312+654+321",
+    "algorithm_version": "gongchuang_slots_v2",
+    "status": "reference_image_uncalibrated_test_draw",
+    "classification": "no_path_regression_not_official_quantity",
+    "reachability_status": "NO_PATH",
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "candidate_coordinate_status": "geometry_aligned_reference_estimates_not_official_survey",
+    "preset": "central_blocked"
+  }
+}

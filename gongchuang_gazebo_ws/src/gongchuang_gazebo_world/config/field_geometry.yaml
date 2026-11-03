@@ -1,0 +1,117 @@
+schema_version: 1
+units: m
+source:
+  pdf: 2027年第十届中国大学生工创大赛智能+工程创新赛道命题与运行（发布稿）.pdf
+  references: ["p3 Figure 1", "p4 Table 2 / Figure 2", "p5 Figures 3-4 / Table 3", "p6 Figure 5 / task code", "p7-8 preliminary process"]
+  calibrated: false
+frame:
+  world: world
+  map: map
+  convention: lower_left_x_right_y_up_z_up
+  map_to_world: [0, 0, 0, 0, 0, 0]
+  legacy_map_origin: [0, 0, 0]
+field:
+  size: [2.4, 2.4]
+  surface_z: 0.0
+  slab_thickness: 0.02
+  thickness_status: provisional_simulation_parameter
+  central_lane_width: 0.4
+  gray_rgba: [0.63, 0.63, 0.65, 1]
+  yellow_rgba: [1, 1, 0.80, 1]
+  blue_rgba: [0.03, 0.06, 1, 1]
+  white_rgba: [0.94, 0.94, 0.94, 1]
+  yellow_size: [0.45, 0.45]
+  yellow_lower_left: [[0.55, 0.55], [1.4, 0.55], [0.55, 1.4], [1.4, 1.4]]
+  yellow_position_status: figure_scale_reconstruction_not_surveyed
+  start_size: [0.3, 0.3]
+  starts:
+    - {id: start_1, lower_left: [2.1, 2.1]}
+    - {id: start_2, lower_left: [2.1, 0.0]}
+  connection_topology: gray_field_minus_colored_and_station_regions_as_figure_1
+stations:
+  raw:
+    center: [1.2, 2.47]
+    center_status: nominal_within_official_random_range_not_surveyed
+    center_x_range: [1.1, 1.3]
+    intrusion_range: [0.075, 0.085]
+    diameter: 0.3
+    total_height: 0.09
+    height_official_range: [0.08, 0.10]
+    deck_thickness: 0.02
+    pedestal_diameter: 0.15
+    pedestal_status: provisional_simplified_figure_2
+    rotation:
+      enabled: true
+      seconds_per_revolution: 8.0
+      official_seconds_range: [6.0, 10.0]
+      direction: 0
+      seed: 2027
+      stops_per_revolution: 3
+      dwell_seconds: 2.0
+      initial_dwell_seconds: 2.0
+      schedule_status: provisional_stop_count_and_dwell_site_dependent
+    exclusion_bounds: [0.95, 2.315, 1.45, 2.4]
+    exclusion_status: conservative_envelope_of_official_placement_range
+  coarse:
+    center: [1.2, 0.075]
+    size: [0.58, 0.15]
+    yaw: 0
+    height: 0.01
+    height_status: provisional_station_pad_not_official_device_height
+    position_status: figure_1_centered_at_bottom_not_surveyed
+  temporary:
+    center: [0.075, 1.2]
+    size: [0.58, 0.15]
+    yaw: 1.5707963267948966
+    height: 0.01
+    height_status: provisional_station_pad_not_official_device_height
+    position_status: figure_1_centered_at_left_not_surveyed
+  fine: {enabled: false, center: null, status: not_located_in_official_preliminary_figure_await_final_rules}
+  finished: {enabled: false, center: null, status: not_located_in_official_preliminary_figure_await_final_rules}
+obstacle:
+  diameter: 0.05
+  height: 0.10
+  static: true
+targets:
+  slot_local_x: {1: 0.15, 2: 0.0, 3: -0.15}
+  material_diameter: 0.05
+  ring_diameter_increments: [0.003, 0.005, 0.007, 0.010, 0.010, 0.010]
+  ring_line_width: 0.0015
+  scores: [15, 10, 7, 5, 3, 1]
+  numbering_status: figure_3_left_to_right_3_2_1
+materials:
+  bottom_diameter: 0.05
+  top_diameter: 0.03
+  height: 0.06
+  flange_height: 0.008
+  mass: 0.08
+  mass_status: provisional_80g_within_official_100g_limit
+  raw_orbit_diameter: 0.20
+  colors:
+    1: {name: red, rgba: [0.85, 0.02, 0.02, 1], material: ABS}
+    2: {name: yellow, rgba: [0.95, 0.8, 0.02, 1], material: ABS}
+    3: {name: blue, rgba: [0.03, 0.08, 0.85, 1], material: ABS}
+    4: {name: green, rgba: [0.02, 0.65, 0.06, 1], material: ABS}
+    5: {name: black, rgba: [0.025, 0.025, 0.025, 1], material: ABS}
+    6: {name: light_blue, rgba: [0.12, 0.7, 0.9, 1], material: PLA}
+qr_board:
+  size: [0.297, 0.210]
+  code_size: 0.08
+  thickness: 0.003
+  center: [2.3985, 1.2, 0.20]
+  yaw: 0.0
+  position_status: nominal_east_inner_edge_figure_1_not_surveyed
+  height_status: provisional_mounting_height_not_specified
+  random_range_status: no_exact_range_given_do_not_fabricate
+  payload_source: config/mission.yaml
+map:
+  resolution: 0.005
+  origin: [0, 0, 0]
+  start_policy: transit_blocked_selected_zone_only_for_departure_or_return
+  raw_envelope_policy: unknown
+  observation_policy: nominal_static_rule_map_not_a_sensor_observation
+  physical_map_policy: known_static_geometry_only_dynamic_unobserved_not_inferred_free
+robot_clearance_reference:
+  square_side: 0.3
+  heading: 0
+  note: test_layouts_only_no_robot_model_or_planner

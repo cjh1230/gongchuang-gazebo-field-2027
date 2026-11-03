@@ -1,0 +1,182 @@
+{
+  "source": "actual Gazebo Harmonic camera and transport poses",
+  "world": "audit_central_slots",
+  "selected_slots": [
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13"
+  ],
+  "count": 5,
+  "seed": 2027,
+  "obstacle_positions_m": [
+    [
+      1.625,
+      1.2
+    ],
+    [
+      1.2,
+      1.625
+    ],
+    [
+      0.775,
+      1.2
+    ],
+    [
+      1.2,
+      0.775
+    ],
+    [
+      1.2,
+      1.2
+    ]
+  ],
+  "pose_tolerance_m": 1e-08,
+  "pose_match": true,
+  "navigation": {
+    "status": "PATH",
+    "obstacle_count": 5,
+    "navigation_task": {
+      "start": "raw_material",
+      "goal": "coarse_slot_2",
+      "scope": "configured_gray_navigation_between_named_approaches"
+    },
+    "robot_footprint_m": [
+      0.3,
+      0.3
+    ],
+    "edge_padding_m": 0.005,
+    "safety_margin_m": 0.01,
+    "tracking_error_m": 0.01,
+    "heading_error_deg": 3.0,
+    "robust_sweep_half_m": 0.17764482364962766,
+    "task_result": {
+      "status": "PATH",
+      "reason": "CONNECTED",
+      "path_m": [
+        [
+          1.2,
+          2.1
+        ],
+        [
+          1.2,
+          2.04
+        ],
+        [
+          0.36,
+          2.04
+        ],
+        [
+          0.36,
+          0.36
+        ],
+        [
+          1.2,
+          0.36
+        ],
+        [
+          1.2,
+          0.38
+        ]
+      ],
+      "expanded": 2970
+    },
+    "raw_to_coarse": {
+      "start": [
+        1.2,
+        2.1
+      ],
+      "goal": [
+        1.2,
+        0.38
+      ],
+      "status": "PATH",
+      "reason": "CONNECTED",
+      "path_m": [
+        [
+          1.2,
+          2.1
+        ],
+        [
+          1.2,
+          2.04
+        ],
+        [
+          0.36,
+          2.04
+        ],
+        [
+          0.36,
+          0.36
+        ],
+        [
+          1.2,
+          0.36
+        ],
+        [
+          1.2,
+          0.38
+        ]
+      ],
+      "expanded": 2970
+    },
+    "blue_zone_policy": "transit_forbidden; selected_departure_nominal_docking_checked_separately",
+    "nominal_blue_departures": {
+      "start_1": true,
+      "start_2": true
+    },
+    "certificate": {
+      "status": "pass",
+      "method": "fixed_heading_A_star_continuous_robust_rectangle_sweep",
+      "robot_square_side_m": 0.3,
+      "heading_rad": 0,
+      "grid_step_m": 0.01,
+      "edge_padding_m": 0.005,
+      "safety_margin_m": 0.01,
+      "tracking_error_m": 0.01,
+      "heading_error_deg": 3.0,
+      "sweep_half_m": 0.17764482364962766,
+      "task": {
+        "start": "raw_material",
+        "goal": "coarse_slot_2",
+        "scope": "configured_gray_navigation_between_named_approaches"
+      },
+      "start_m": [
+        1.2,
+        2.1
+      ],
+      "goal_m": [
+        1.2,
+        0.38
+      ],
+      "scope": "configured_gray_navigation_task_only; blue_docking_separate",
+      "path_m": [
+        [
+          1.2,
+          2.1
+        ],
+        [
+          1.2,
+          2.04
+        ],
+        [
+          0.36,
+          2.04
+        ],
+        [
+          0.36,
+          0.36
+        ],
+        [
+          1.2,
+          0.36
+        ],
+        [
+          1.2,
+          0.38
+        ]
+      ]
+    }
+  }
+}

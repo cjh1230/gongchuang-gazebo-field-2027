@@ -1,0 +1,26 @@
+{
+  "top": {
+    "source": "Gazebo Harmonic camera sensor via gz.transport13",
+    "topic": "/audit/top",
+    "width": 1400,
+    "height": 1200,
+    "sim_stamp_sec": 1,
+    "encoding": "RGB_INT8"
+  },
+  "cross": {
+    "source": "Gazebo Harmonic camera sensor via gz.transport13",
+    "topic": "/audit/cross",
+    "width": 1400,
+    "height": 1200,
+    "sim_stamp_sec": 1,
+    "encoding": "RGB_INT8"
+  },
+  "qr_board": {
+    "source": "Gazebo Harmonic camera sensor via gz.transport13",
+    "topic": "/audit/qr_board",
+    "width": 1400,
+    "height": 1200,
+    "sim_stamp_sec": 1,
+    "encoding": "RGB_INT8"
+  }
+}

@@ -1,0 +1,12 @@
+schema_version: 1
+mode: seeded
+task_code: "156+123+516+231"
+provenance: official_page_6_example_not_an_actual_random_draw
+spawn_clearance: 0.0003
+stages:
+  competition: batch1_raw
+  batch1_coarse: batch1_coarse
+  batch2_ready: batch1_stored_batch2_raw
+  batch2_coarse: batch1_stored_batch2_coarse
+  stacking_demo: both_batches_stacked_by_color
+note: independent_initial_conditions_no_robot_no_automatic_transfer_or_score_referee

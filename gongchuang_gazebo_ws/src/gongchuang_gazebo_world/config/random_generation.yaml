@@ -1,0 +1,59 @@
+schema_version: 2
+seed: 2027
+obstacle_count: 2
+mode: random_slots
+minimum_obstacle_separation: 0.06
+validation:
+  robot_square_side: 0.30
+  grid_step: 0.01
+  edge_padding: 0.005
+  safety_margin: 0.010
+  tracking_error: 0.010
+  heading_error_deg: 3.0
+  heading_rad: 0.0
+  raw_approach: [1.20, 2.10]
+  station_approach_offset: 0.30
+  qr_approach: [2.15, 1.20]
+  start_1_port: [1.90, 2.20]
+  start_2_port: [1.90, 0.20]
+status: reference_image_slots_uncalibrated_not_official_coordinates_or_quantity
+candidate_slots:
+  calibrated: false
+  frame: world_equals_map_lower_left_x_right_y_up
+  source: user_R1_R13_reference_2026_11_03
+  coordinate_status: geometry_aligned_reference_estimates_not_official_survey
+  calibration: >-
+    Number identities follow the supplied image. Centers align to existing yellow
+    square centers (0.775/1.625), cross center (1.2), and outer gray lane centers
+    (0.275/2.125). Edit xy_m after surveying; never silently relocate an invalid slot.
+    Gray rectangles in the reference are labels/locations, not additional facilities.
+  slots:
+    R1: {xy_m: [2.125, 1.625], relation: east_north}
+    R2: {xy_m: [1.625, 2.125], relation: north_east}
+    R3: {xy_m: [0.775, 2.125], relation: north_west}
+    R4: {xy_m: [0.275, 1.625], relation: west_north}
+    R5: {xy_m: [0.275, 0.775], relation: west_south}
+    R6: {xy_m: [0.775, 0.275], relation: south_west}
+    R7: {xy_m: [1.625, 0.275], relation: south_east}
+    R8: {xy_m: [2.125, 0.775], relation: east_south}
+    R9: {xy_m: [1.625, 1.200], relation: cross_east}
+    R10: {xy_m: [1.200, 1.625], relation: cross_north}
+    R11: {xy_m: [0.775, 1.200], relation: cross_west}
+    R12: {xy_m: [1.200, 0.775], relation: cross_south}
+    R13: {xy_m: [1.200, 1.200], relation: cross_center}
+navigation_task:
+  start: raw_material
+  goal: coarse_slot_2
+  scope: configured_gray_navigation_between_named_approaches
+presets:
+  obstacles_0: {obstacle_count: 0, mode: random_slots, classification: test}
+  obstacles_1: {obstacle_count: 1, mode: random_slots, classification: test}
+  obstacles_2: {obstacle_count: 2, mode: random_slots, classification: default_user_configuration_not_official_quantity}
+  obstacles_3: {obstacle_count: 3, mode: random_slots, classification: test}
+  stress_4: {obstacle_count: 4, mode: stress_slots, classification: stress_test_not_official_quantity}
+  stress_5: {obstacle_count: 5, mode: stress_slots, classification: stress_test_not_official_quantity}
+  stress_6: {obstacle_count: 6, mode: stress_slots, classification: stress_test_not_official_quantity}
+  central_blocked:
+    mode: blocked_slots
+    classification: no_path_regression_not_official_quantity
+    slots: [R4, R10, R1]

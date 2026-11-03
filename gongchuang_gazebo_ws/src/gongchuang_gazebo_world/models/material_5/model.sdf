@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="material_5">
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <mass>0.08</mass>
+        <inertia>
+          <ixx>3.6500000000000006e-05</ixx>
+          <iyy>3.6500000000000006e-05</iyy>
+          <izz>2.5000000000000005e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="bottom_flange">
+        <pose>0 0 -0.026 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>0.008</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <collision name="bottom_flange_collision">
+        <pose>0 0 -0.026 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>0.008</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="taper">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://material_5/meshes/taper.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <collision name="taper_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://material_5/meshes/taper.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="top_flange">
+        <pose>0 0 0.026 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.008</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.025 0.025 0.025 1</ambient>
+          <diffuse>0.025 0.025 0.025 1</diffuse>
+          <specular>0.03 0.03 0.03 1</specular>
+        </material>
+      </visual>
+      <collision name="top_flange_collision">
+        <pose>0 0 0.026 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.008</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>

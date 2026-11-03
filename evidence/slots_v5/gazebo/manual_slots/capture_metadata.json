@@ -1,0 +1,10 @@
+{
+  "top": {
+    "source": "Gazebo Harmonic camera sensor via gz.transport13",
+    "topic": "/audit/top",
+    "width": 1400,
+    "height": 1200,
+    "sim_stamp_sec": 2,
+    "encoding": "RGB_INT8"
+  }
+}

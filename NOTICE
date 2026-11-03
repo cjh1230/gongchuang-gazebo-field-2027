@@ -1,0 +1,7 @@
+2027 Gongchuang Gazebo field
+
+Independent ROS 2 Jazzy / Gazebo Harmonic simulation project.
+Existing ROS package license declaration: Apache-2.0.
+Competition documents are referenced as geometry provenance; their original
+contents are not included or relicensed by this repository.
+R1-R13 candidate coordinates are uncalibrated reference-image estimates.

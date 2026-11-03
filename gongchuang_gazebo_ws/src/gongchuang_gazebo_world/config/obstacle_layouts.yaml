@@ -1,0 +1,8 @@
+schema_version: 2
+status: reference_slot_fixtures_not_official_draw_results
+layouts:
+  empty_obstacles: []
+  single_obstacle: [R13]
+  competition: [R12, R11, R1]
+  blocked_corridor: [R12]
+blocked_corridor_note: blocks_the_400mm_central_lane_for_a_300mm_square_robot_not_a_complete_physical_wall_or_global_disconnection

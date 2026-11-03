@@ -1,0 +1,119 @@
+[
+  {
+    "slot_id": "R1",
+    "xy_m": [
+      2.125,
+      1.625
+    ],
+    "legal": true,
+    "relation": "east_north"
+  },
+  {
+    "slot_id": "R2",
+    "xy_m": [
+      1.625,
+      2.125
+    ],
+    "legal": true,
+    "relation": "north_east"
+  },
+  {
+    "slot_id": "R3",
+    "xy_m": [
+      0.775,
+      2.125
+    ],
+    "legal": true,
+    "relation": "north_west"
+  },
+  {
+    "slot_id": "R4",
+    "xy_m": [
+      0.275,
+      1.625
+    ],
+    "legal": true,
+    "relation": "west_north"
+  },
+  {
+    "slot_id": "R5",
+    "xy_m": [
+      0.275,
+      0.775
+    ],
+    "legal": true,
+    "relation": "west_south"
+  },
+  {
+    "slot_id": "R6",
+    "xy_m": [
+      0.775,
+      0.275
+    ],
+    "legal": true,
+    "relation": "south_west"
+  },
+  {
+    "slot_id": "R7",
+    "xy_m": [
+      1.625,
+      0.275
+    ],
+    "legal": true,
+    "relation": "south_east"
+  },
+  {
+    "slot_id": "R8",
+    "xy_m": [
+      2.125,
+      0.775
+    ],
+    "legal": true,
+    "relation": "east_south"
+  },
+  {
+    "slot_id": "R9",
+    "xy_m": [
+      1.625,
+      1.2
+    ],
+    "legal": true,
+    "relation": "cross_east"
+  },
+  {
+    "slot_id": "R10",
+    "xy_m": [
+      1.2,
+      1.625
+    ],
+    "legal": true,
+    "relation": "cross_north"
+  },
+  {
+    "slot_id": "R11",
+    "xy_m": [
+      0.775,
+      1.2
+    ],
+    "legal": true,
+    "relation": "cross_west"
+  },
+  {
+    "slot_id": "R12",
+    "xy_m": [
+      1.2,
+      0.775
+    ],
+    "legal": true,
+    "relation": "cross_south"
+  },
+  {
+    "slot_id": "R13",
+    "xy_m": [
+      1.2,
+      1.2
+    ],
+    "legal": true,
+    "relation": "cross_center"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "frame": "map",
+  "map_to_world": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cell_center": "x=(col+0.5)*resolution; y=(height-row-0.5)*resolution",
+  "semantic_ids": {
+    "gray": 1,
+    "yellow": 2,
+    "start_1": 3,
+    "start_2": 4,
+    "station": 5,
+    "raw_uncertain": 6,
+    "cylinder": 7,
+    "qr_board": 8
+  },
+  "unknown_pgm": 205,
+  "free_pgm": 254,
+  "blocked_pgm": 0,
+  "start_policy": "transit_blocked_selected_zone_only_for_departure_or_return",
+  "observation_policy": "nominal_static_rule_map_not_a_sensor_observation",
+  "fine": {
+    "enabled": false,
+    "center": null,
+    "status": "not_located_in_official_preliminary_figure_await_final_rules"
+  },
+  "finished": {
+    "enabled": false,
+    "center": null,
+    "status": "not_located_in_official_preliminary_figure_await_final_rules"
+  },
+  "warning": "Rule occupied means forbidden, not necessarily solid. Do not replace local live observations with physical_nominal."
+}

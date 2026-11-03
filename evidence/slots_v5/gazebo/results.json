@@ -1,0 +1,95 @@
+{
+  "default_2": {
+    "count": 2,
+    "slots": [
+      "R1",
+      "R13"
+    ],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "default_2/top.png"
+  },
+  "slots_debug": {
+    "count": 2,
+    "slots": [
+      "R1",
+      "R13"
+    ],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "slots_debug/top.png"
+  },
+  "slots_all": {
+    "count": 0,
+    "slots": [],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "slots_all/top.png"
+  },
+  "central_slots": {
+    "count": 5,
+    "slots": [
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13"
+    ],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "central_slots/top.png"
+  },
+  "manual_slots": {
+    "count": 3,
+    "slots": [
+      "R2",
+      "R7",
+      "R10"
+    ],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "manual_slots/top.png"
+  },
+  "stress_slots": {
+    "count": 3,
+    "slots": [
+      "R1",
+      "R13",
+      "R2"
+    ],
+    "status": "PATH",
+    "live_poses": "pass",
+    "screenshot": "stress_slots/top.png"
+  },
+  "blocked_slots": {
+    "count": 3,
+    "slots": [
+      "R4",
+      "R10",
+      "R1"
+    ],
+    "status": "NO_PATH",
+    "live_poses": "pass",
+    "screenshot": "blocked_slots/top.png"
+  },
+  "physical_contacts": {
+    "status": "pass",
+    "13_top_contact_heights_m": {
+      "R1": 0.10999914030038153,
+      "R2": 0.10999914030038153,
+      "R3": 0.10999914030038153,
+      "R4": 0.10999914030038153,
+      "R5": 0.10999914030038153,
+      "R6": 0.10999914030038153,
+      "R7": 0.10999914030038153,
+      "R8": 0.10999914030038153,
+      "R9": 0.10999914030038153,
+      "R10": 0.10999914030038153,
+      "R11": 0.10999914030038153,
+      "R12": 0.10999914030038153,
+      "R13": 0.10999914030038153,
+      "control": 0.009999887207927056
+    },
+    "tolerance_m": 0.002
+  }
+}

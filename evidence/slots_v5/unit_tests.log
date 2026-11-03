@@ -1,0 +1,37 @@
+test_01_official_dimensions_independent_constants (test_geometry.Geometry.test_01_official_dimensions_independent_constants) ... ok
+test_02_ground_and_visual_collision_separation (test_geometry.Geometry.test_02_ground_and_visual_collision_separation) ... ok
+test_03_cross_width_derived_from_edges (test_geometry.Geometry.test_03_cross_width_derived_from_edges) ... ok
+test_04_cylinders_contact_and_size (test_geometry.Geometry.test_04_cylinders_contact_and_size) ... ok
+test_05_station_support (test_geometry.Geometry.test_05_station_support) ... ok
+test_06_world_instances_no_illegal_overlaps (test_geometry.Geometry.test_06_world_instances_no_illegal_overlaps) ... ok
+test_07_map_semantics_and_selected_start (test_geometry.Geometry.test_07_map_semantics_and_selected_start) ... ok
+test_08_every_cell_matches_sdf_footprints (test_geometry.Geometry.test_08_every_cell_matches_sdf_footprints) ... ok
+test_09_corridor_blocked_for_300mm_footprint (test_geometry.Geometry.test_09_corridor_blocked_for_300mm_footprint) ... ok
+test_10_no_stale_generated_files (test_geometry.Geometry.test_10_no_stale_generated_files) ... ok
+test_11_numbered_six_ring_dimensions (test_geometry.Geometry.test_11_numbered_six_ring_dimensions) ... ok
+test_12_material_dimensions_mass_and_contact_shape (test_geometry.Geometry.test_12_material_dimensions_mass_and_contact_shape) ... ok
+test_13_raw_layout_120_degrees (test_geometry.Geometry.test_13_raw_layout_120_degrees) ... ok
+test_14_qr_board_dimensions_and_occupancy (test_geometry.Geometry.test_14_qr_board_dimensions_and_occupancy) ... ok
+test_15_two_batches_color_consistency_and_stack (test_geometry.Geometry.test_15_two_batches_color_consistency_and_stack) ... ok
+test_16_random_sdf_matches_certificate_and_colors (test_geometry.Geometry.test_16_random_sdf_matches_certificate_and_colors) ... ok
+test_01_seed_reproducibility_and_independent_colors (test_random_scenes.RandomScenes.test_01_seed_reproducibility_and_independent_colors) ... ok
+test_02_1000_seed_uniform_unfiltered_distribution (test_random_scenes.RandomScenes.test_02_1000_seed_uniform_unfiltered_distribution) ... ok
+test_03_blocked_operating_pose_rejected (test_random_scenes.RandomScenes.test_03_blocked_operating_pose_rejected) ... ok
+test_04_invalid_seed_count_and_ids (test_random_scenes.RandomScenes.test_04_invalid_seed_count_and_ids) ... ok
+test_05_forged_route_and_budgets_rejected (test_random_scenes.RandomScenes.test_05_forged_route_and_budgets_rejected) ... ok
+test_06_complete_cylinder_not_center_only (test_random_scenes.RandomScenes.test_06_complete_cylinder_not_center_only) ... ok
+test_07_legacy_quantity_presets_keep_count_not_solvability_filter (test_random_scenes.RandomScenes.test_07_legacy_quantity_presets_keep_count_not_solvability_filter) ... ok
+test_08_blocked_fixture_preserved_and_real_disconnection (test_random_scenes.RandomScenes.test_08_blocked_fixture_preserved_and_real_disconnection) ... ok
+test_09_partial_central_block_can_be_bypassed (test_random_scenes.RandomScenes.test_09_partial_central_block_can_be_bypassed) ... ok
+test_10_13_positions_reference_identity_and_geometry_anchors (test_random_scenes.RandomScenes.test_10_13_positions_reference_identity_and_geometry_anchors) ... ok
+test_11_invalid_slot_reported_never_relocated (test_random_scenes.RandomScenes.test_11_invalid_slot_reported_never_relocated) ... ok
+test_12_all_modes_and_manual_example (test_random_scenes.RandomScenes.test_12_all_modes_and_manual_example) ... ok
+test_13_actual_sdf_raster_json_and_markers (test_random_scenes.RandomScenes.test_13_actual_sdf_raster_json_and_markers) ... ok
+test_14_error_budgets_and_full_sweep (test_random_scenes.RandomScenes.test_14_error_budgets_and_full_sweep) ... ok
+test_15_random_retains_blocked_draws_and_all_slots_reachable_by_lottery (test_random_scenes.RandomScenes.test_15_random_retains_blocked_draws_and_all_slots_reachable_by_lottery) ... ok
+test_16_all_example_maps_and_sdf_use_identical_slot_ids (test_random_scenes.RandomScenes.test_16_all_example_maps_and_sdf_use_identical_slot_ids) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.698s
+
+OK

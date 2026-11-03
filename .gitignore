@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.python_deps/
+build/
+install/
+log/
+generated/
+*.zip
+.env
+.env.*

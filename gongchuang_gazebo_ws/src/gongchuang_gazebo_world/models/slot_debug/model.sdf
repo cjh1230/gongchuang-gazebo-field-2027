@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="slot_debug">
+    <static>true</static>
+    <link name="body">
+      <visual name="R1_label">
+        <pose>2.125 1.71 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R1.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R1_marker">
+        <pose>2.125 1.625 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R2_label">
+        <pose>1.625 2.21 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R2.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R2_marker">
+        <pose>1.625 2.125 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R3_label">
+        <pose>0.775 2.21 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R3.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R3_marker">
+        <pose>0.775 2.125 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R4_label">
+        <pose>0.275 1.71 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R4.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R4_marker">
+        <pose>0.275 1.625 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R5_label">
+        <pose>0.275 0.86 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R5.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R5_marker">
+        <pose>0.275 0.775 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R6_label">
+        <pose>0.775 0.36000000000000004 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R6.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R6_marker">
+        <pose>0.775 0.275 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R7_label">
+        <pose>1.625 0.36000000000000004 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R7.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R7_marker">
+        <pose>1.625 0.275 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R7.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R8_label">
+        <pose>2.125 0.86 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R8.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R8_marker">
+        <pose>2.125 0.775 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R8.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R9_label">
+        <pose>1.625 1.285 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R9.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R9_marker">
+        <pose>1.625 1.2 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R9.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R10_label">
+        <pose>1.2 1.71 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R10.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R10_marker">
+        <pose>1.2 1.625 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R10.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R11_label">
+        <pose>0.775 1.285 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R11.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R11_marker">
+        <pose>0.775 1.2 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R11.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R12_label">
+        <pose>1.2 0.86 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R12.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R12_marker">
+        <pose>1.2 0.775 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R12.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="R13_label">
+        <pose>1.2 1.285 0.002 0 0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.14 0.07</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>model://slot_debug/R13.png</albedo_map>
+              <roughness>1</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="R13_marker">
+        <pose>1.2 1.2 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://slot_debug/R13.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.05 0.7 0.9 1</ambient>
+          <diffuse>0.05 0.7 0.9 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
