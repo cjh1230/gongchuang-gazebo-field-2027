@@ -1,0 +1,64 @@
+{
+  "target": "Ubuntu 22.04 / ROS 2 Humble / Gazebo Harmonic",
+  "actual_check_host": "Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic 8.15.0",
+  "python_3_10_syntax": "pass",
+  "shell_syntax": "pass",
+  "humble_vendor_dependencies_disabled": "pass",
+  "jazzy_vendor_dependencies_retained": "pass",
+  "ros_environment_selection_cases": 4,
+  "ros_environment_selection": "pass",
+  "non_vendor_build": "pass",
+  "source_regression_tests_passed": 32,
+  "ctest": "2 tests; 0 errors; 0 failures",
+  "gazebo_start_script_smoke": "pass",
+  "live_bundle_validation": {
+    "seed": 2027,
+    "count": 2,
+    "task_code": "456+312+654+321",
+    "reachability_status": "PATH",
+    "raw_to_coarse": {
+      "start": [
+        1.2,
+        2.1
+      ],
+      "goal": [
+        1.2,
+        0.38
+      ],
+      "status": "PATH",
+      "reason": "CONNECTED",
+      "path_m": [
+        [
+          1.2,
+          2.1
+        ],
+        [
+          1.2,
+          2.04
+        ],
+        [
+          0.36,
+          2.04
+        ],
+        [
+          0.36,
+          0.36
+        ],
+        [
+          1.2,
+          0.36
+        ],
+        [
+          1.2,
+          0.38
+        ]
+      ],
+      "expanded": 3228
+    },
+    "sdf": "pass",
+    "obstacle_live_poses": "pass",
+    "material_color_entities": "pass"
+  },
+  "jammy_humble_runtime": "not_run_no_target_environment",
+  "historical_screenshots": "Ubuntu 24.04/Jazzy baseline; not Jammy evidence"
+}

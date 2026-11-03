@@ -153,7 +153,7 @@ def build_models(c,root,model,solid,save):
     size=c['qr_board']['size']; factor=10000
     board=Image.new('RGB',(round(size[0]*factor),round(size[1]*factor)),'white')
     side=round(c['qr_board']['code_size']*factor)
-    qrimg=qrimg.resize((side,side),Image.Resampling.NEAREST)
+    qrimg=qrimg.resize((side,side),getattr(Image,'Resampling',Image).NEAREST)
     board.paste(qrimg,((board.width-side)//2,(board.height-side)//2))
     dest=root/'models/qr_board/materials/textures/task_board.png'; dest.parent.mkdir(parents=True,exist_ok=True); board.save(dest)
     s,m,l=model('qr_board')

@@ -5,7 +5,9 @@
   <maintainer email="maintainer@example.invalid">Gongchuang simulation team</maintainer>
   <license>Apache-2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>gz_sim_vendor</depend><depend>gz_plugin_vendor</depend>
+  <depend condition="$ROS_DISTRO != 'humble'">gz_sim_vendor</depend>
+  <depend condition="$ROS_DISTRO != 'humble'">gz_plugin_vendor</depend>
+  <!-- Humble uses OSRF libgz-sim8-dev / libgz-plugin2-dev; see docs/ubuntu22.04.md. -->
   <exec_depend>ros_gz_sim</exec_depend><exec_depend>ros_gz_bridge</exec_depend>
   <exec_depend>launch_ros</exec_depend><exec_depend>python3-yaml</exec_depend>
   <exec_depend>python3-pil</exec_depend><exec_depend>rclpy</exec_depend>

@@ -1,6 +1,8 @@
-# 2027 工创赛智能搬运初赛场地
+# 2027 工创赛智能搬运初赛场地（Ubuntu 22.04 分支）
 
-独立 ROS 2 Jazzy / Gazebo Harmonic 场地，版本 0.5；包含场地装置和物料，不含机器人或导航控制。已核对官方 PDF 第 3–8 页，包括初赛图、工位/物料尺寸、任务码与两批码垛要求。所有尺寸、位姿、地图与测试来自统一配置，精度性质见 [图纸依据](docs/provenance.md)。
+安装入口以 [Ubuntu 22.04/Humble + Harmonic 说明](docs/ubuntu22.04.md) 为准。已有 Gazebo 截图来自 24.04/Jazzy 历史基线，不作为本分支 Jammy 实机证据。
+
+独立 ROS 2 Humble / Gazebo Harmonic 场地，版本 0.5；包含场地装置和物料，不含机器人或导航控制。已核对官方 PDF 第 3–8 页，包括初赛图、工位/物料尺寸、任务码与两批码垛要求。所有尺寸、位姿、地图与测试来自统一配置，精度性质见 [图纸依据](docs/provenance.md)。
 
 ## 构建与运行
 
@@ -44,7 +46,7 @@ GitHub 便携版本的构建、依赖和运行命令见 [仓库根 README](../..
 ## 修改后重建与测试
 
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 cd ~/gongchuang_gazebo_ws/src/gongchuang_gazebo_world
 # 修改 config/field_geometry.yaml 或 obstacle_layouts.yaml 后：
 python3 scripts/generate.py
@@ -76,7 +78,7 @@ python3 -m pip install --target ~/gongchuang_gazebo_ws/.python_deps -r requireme
 ```bash
 bash ~/gongchuang_gazebo_ws/src/gongchuang_gazebo_world/scripts/start.sh audit_views
 # 另一 WSL 终端，无需 ros_gz 图像桥接：
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 export GZ_PARTITION=gongchuang_local
 cd ~/gongchuang_gazebo_ws/src/gongchuang_gazebo_world
 python3 scripts/capture.py --output ~/gongchuang_gazebo_ws/evidence/screenshots
@@ -87,13 +89,13 @@ top、isometric、cross、stations（原料俯视）、coarse、temporary、obst
 
 ## 从交付副本迁移到另一台 WSL
 
-需要 Ubuntu 24.04、ROS 2 Jazzy、C++17 编译器。经用户同意后安装：
+需要 Ubuntu 22.04、ROS 2 Humble、C++17 编译器。经用户同意后安装：
 
 ```bash
-sudo apt-get install --no-install-recommends ros-jazzy-ros-gz ros-jazzy-ros2run ros-jazzy-ros2launch python3-colcon-common-extensions python3-yaml python3-pil
+sudo apt-get install --no-install-recommends gz-harmonic libgz-sim8-dev libgz-plugin2-dev ros-humble-ros-gzharmonic ros-humble-ros2run ros-humble-ros2launch python3-colcon-common-extensions python3-yaml python3-pil
 mkdir -p ~/gongchuang_gazebo_ws/src
 # 将本包复制到该 src 下；不要覆盖已有工作区中的同名包，先确认版本。
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 cd ~/gongchuang_gazebo_ws
 colcon build --symlink-install
 ```

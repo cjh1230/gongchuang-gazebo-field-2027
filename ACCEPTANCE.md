@@ -1,5 +1,7 @@
 # R1～R13 验收摘要 v0.5.0
 
+`ubuntu-22.04` 分支提示：下面是原 Ubuntu 24.04/Jazzy 场地验收基线，不能作为 Ubuntu 22.04/Humble 的实机运行记录。本分支的适配内容、当前验证范围与安装步骤见 [Ubuntu 22.04 说明](gongchuang_gazebo_ws/src/gongchuang_gazebo_world/docs/ubuntu22.04.md)。
+
 执行日期：2026-11-03。环境：Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic 8.15.0。截图均为实际 Gazebo 相机输出；SVG 为配置坐标图。
 
 ## 候选坐标

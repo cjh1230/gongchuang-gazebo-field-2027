@@ -1,6 +1,6 @@
-# 2027 工创赛 Gazebo 场地 · R1～R13 障碍抽签
+# 2027 工创赛 Gazebo 场地 · Ubuntu 22.04 分支
 
-ROS 2 Jazzy / Gazebo Harmonic 的独立仿真场地：2.4 × 2.4 m 场地、工位、真实转盘、物料、二维码、两批码垛初态，以及可复现的 R1～R13 离散障碍物抽签。
+ROS 2 Humble / Gazebo Harmonic 的独立仿真场地：2.4 × 2.4 m 场地、工位、真实转盘、物料、二维码、两批码垛初态，以及可复现的 R1～R13 离散障碍物抽签。
 
 **候选编号来自参考图，坐标依据既有场地几何对齐，尚未现场标定，不是官方明确指定的坐标。默认两个障碍仅为开发测试配置。** 本项目是独立仿真工程。
 
@@ -18,18 +18,18 @@ ROS 2 Jazzy / Gazebo Harmonic 的独立仿真场地：2.4 × 2.4 m 场地、工�
 
 障碍直径 50 mm、高 100 mm，黑色静态实体，有真实物理碰撞。唯一位置源为包内 config/random_generation.yaml；Gazebo、二维地图、抽签记录与离线 A* 共用该配置。相同版本/配置/种子可复现；不同种子可能抽中相同组合。
 
-## 运行（Ubuntu 24.04 或 WSL2）
+## 运行（Ubuntu 22.04 或 WSL2 Ubuntu-22.04）
 
-先配置 ROS 2 Jazzy、Gazebo Harmonic、colcon、python3-yaml、python3-pil，以及 ros_gz_sim / ros_gz_bridge。接口安装参考 [Gazebo 官方文档](https://gazebosim.org/docs/harmonic/ros_installation/)。
+先按 [Ubuntu 22.04 完整说明](gongchuang_gazebo_ws/src/gongchuang_gazebo_world/docs/ubuntu22.04.md) 安装 ROS 2 Humble 和 OSRF Harmonic。桥接使用 ros-humble-ros-gzharmonic，避免安装默认 Fortress 的 ros-humble-ros-gz。
 
 ~~~bash
-git clone https://github.com/cjh1230/gongchuang-gazebo-field-2027.git
+git clone --branch ubuntu-22.04 https://github.com/cjh1230/gongchuang-gazebo-field-2027.git
 cd gongchuang-gazebo-field-2027/gongchuang_gazebo_ws
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 export GC_WORKSPACE="$PWD"
 python3 -m pip install --target "$PWD/.python_deps" -r src/gongchuang_gazebo_world/requirements-build.txt
 export PYTHONPATH="$PWD/.python_deps:$PYTHONPATH"
-colcon build --symlink-install
+colcon build --symlink-install --cmake-args -DGC_USE_ROS_GZ_VENDOR=OFF
 source install/setup.bash
 
 bash src/gongchuang_gazebo_world/scripts/start.sh random_seeded
@@ -47,6 +47,8 @@ bash src/gongchuang_gazebo_world/scripts/start.sh slots_all
 生成器 --output 可生成独立复现包，避免覆盖默认资源。GUI 可选择 slots_debug、slots_all、central_slots、manual_slots、stress_slots；调试编号没有碰撞。GC_SOFTWARE_RENDER=1 可选择软件渲染。
 
 ## 验证和证据
+
+已有截图及 32 项功能基线来自 24.04/Jazzy。当前分支完成源码适配及现有环境中的隔离构建检查；**22.04/Humble 安装、桥接和 GUI 实机验收尚未进行**，详见兼容说明。主分支继续保留 24.04 版本。
 
 ~~~bash
 python3 -m unittest discover -s src/gongchuang_gazebo_world/test -p 'test_*.py' -v

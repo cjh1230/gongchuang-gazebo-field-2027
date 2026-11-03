@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -eo pipefail
-source /opt/ros/jazzy/setup.bash
 tool_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$tool_dir/ros_environment.sh"
+gc_source_ros
 pkg="$(cd "$tool_dir/.." && pwd)"
 ws="${GC_WORKSPACE:-$HOME/gongchuang_gazebo_ws}"
 seed="${1:-auto}"; count="${2:-auto}"; stage="${3:-random_seeded}"

@@ -49,7 +49,9 @@ def main():
     occ=Image.open(a.bundle/'maps'/(a.layout+'_transit.pgm')).convert('RGB')
     for i,(title,img) in enumerate([('Actual Gazebo top capture',crop),('Semantic rules (nominal)',color),('Transit occupancy (blue closed)',occ)]):
         x=30+i*590; d.text((x,72),title,font=font,fill='#253246')
-        canvas.paste(img.resize((size,size),Image.Resampling.NEAREST),(x,y0))
+        # Jammy ships Pillow 9.0; the Resampling enum was added in Pillow 9.1.
+        nearest=getattr(Image,'Resampling',Image).NEAREST
+        canvas.paste(img.resize((size,size),nearest),(x,y0))
         d.rectangle((x,y0,x+size,y0+size),outline='#516070',width=1)
         d.text((x,y0+size+12),'(0,0) lower-left | +X right | +Y up',font=small,fill='#253246')
     d.text((30,710),'Gray: legal transit | Yellow: forbidden | Blue: selected start/return only | Purple: raw placement unknown',font=small,fill='#253246')

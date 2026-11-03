@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 set -eo pipefail
-source /opt/ros/jazzy/setup.bash
+tool_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$tool_dir/ros_environment.sh"
+gc_source_ros
+if ! command -v gz >/dev/null; then
+  echo 'Gazebo Harmonic is required; install gz-harmonic from the OSRF repository.' >&2
+  exit 2
+fi
+gc_gz_version="$(gz sim --versions 2>/dev/null)"
+if [[ ! "$gc_gz_version" =~ (^|[[:space:]])8\. ]]; then
+  echo "Gazebo Sim 8 / Harmonic required; found: $gc_gz_version" >&2
+  exit 2
+fi
 pkg="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 if [[ ! -d "$pkg/worlds" ]]; then pkg="$(ros2 pkg prefix --share gongchuang_gazebo_world)"; fi
 layout="${1:-random_seeded}"

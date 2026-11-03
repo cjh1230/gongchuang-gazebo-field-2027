@@ -16,7 +16,7 @@ def generate_launch_description():
         return [ExecuteProcess(cmd=['gz','sim','-r',str(Path(fieldroot)/'worlds'/(layout+'.sdf')),*flags],output='screen')]
     return LaunchDescription([
         DeclareLaunchArgument('layout', default_value='random_seeded',
-            choices=['competition','empty_obstacles','single_obstacle','blocked_corridor','audit_views','audit_stacking','batch1_coarse','batch2_ready','batch2_coarse','stacking_demo','random_seeded','random_batch1_coarse','random_batch2_ready','random_batch2_coarse','random_stacking_demo','audit_random','audit_random_stacking','obstacles_0','obstacles_1','obstacles_2','obstacles_3','stress_4','stress_5','stress_6','central_blocked','audit_central_blocked','audit_stress_6']),
+            choices=['competition','empty_obstacles','single_obstacle','blocked_corridor','audit_views','audit_stacking','batch1_coarse','batch2_ready','batch2_coarse','stacking_demo','random_seeded','random_batch1_coarse','random_batch2_ready','random_batch2_coarse','random_stacking_demo','audit_random','audit_random_stacking','obstacles_0','obstacles_1','obstacles_2','obstacles_3','stress_4','stress_5','stress_6','central_blocked','audit_central_blocked','audit_stress_6','slots_debug','slots_all','central_slots','manual_slots','stress_slots','audit_slots_debug','audit_slots_all','audit_central_slots','audit_manual_slots','audit_stress_slots']),
         DeclareLaunchArgument('field_root',default_value=pkg),
         DeclareLaunchArgument('gz_flags',default_value=''),
         SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH',PathJoinSubstitution([LaunchConfiguration('field_root'),'models'])),
